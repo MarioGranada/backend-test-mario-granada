@@ -1,0 +1,31 @@
+
+<header class="header-container">
+	<div class="header-box">
+	<div class="header-menu-icon" ng-click="displayElementsList()"><i class="glyphicon glyphicon-pause"></i></div>
+	<div class="header-title active-notice" >{{currentNewTitle | lowercase}}</div>
+	</div>
+</header>
+<section class="content-section">
+	<div class="content-box">
+		<ul class="items-table">
+
+			<li id="new_{{new.id}}" class="item-box" ng-repeat="new in newsList" >
+					
+					<div class="item-headline-box" ng-value="{{'new.title'}}" ng-click="displayCurrentElement($event)">
+					<div class="item-headline">
+						<div class="item-bullet"></div>
+						<div class="item-headline-text item-title">{{new.title | lowercase}}</div>
+					</div>
+					</div>
+					<div class="item-info-container">
+						<div class="item-image"><img class="img-responsive" ng-src="{{new.image}}"></div>
+						<div class="item-info-subcontainer">
+							<div class="item-title">{{new.title | lowercase}}</div>
+							<div class="item-desc">{{new.content}}</div>
+						</div>
+					</div>
+			</li>
+		</ul>
+		
+	</div>
+</section>

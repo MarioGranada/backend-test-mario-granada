@@ -1,0 +1,170 @@
+*{
+	box-sizing: unset !important;
+}
+body{
+	background: #394c5f;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	color: #000;
+	line-height: 1;
+}
+ul{
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+	float: left;
+}
+.view-frame{
+	display: table;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+.view-container{
+	padding: 0;
+}
+.item-box{
+	margin: 0px;
+	position: relative;
+	float: left;
+	width: 100%;
+	margin-bottom: 10px;
+	cursor: pointer;
+	display: none;
+}
+.item-start-price-label{
+	font-size: 12px;
+	margin: 10px 0px 0px 10px;
+	float: left;
+}
+.header-menu-icon{
+	float: left;
+	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	font-size: 60px;
+	cursor: pointer;
+}
+.header-container{
+	float: left;
+	width: 100%;
+	background: #ff6654;
+	color: #FFF;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.header-box{
+	line-height: 30px;
+	position: relative;
+}
+.content-box{
+	
+}
+.header-box, .content-box{
+	display: table;
+	margin: 0 auto;
+}
+.content-section{
+	float: left;
+	background: #c9c9c9;
+	width: 100%;
+}
+.header-title,.item-headline-text{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+}
+.header-title,.item-headline-text,.item-title{
+	word-wrap: break-word;
+	font-weight: bold;
+	text-align: left;
+	text-transform: capitalize;
+}
+.header-title{
+	display: none;
+}
+.item-info-container{
+	display: none;
+	/*opacity: 0;*/
+}
+.active-item-info-container{
+	display: block;
+	/*opacity: 1;*/
+}
+.display-element{
+	display: block;
+}
+.active-notice{
+	display: block;
+}
+.item-bullet{
+	background: #c7f04b;
+	float: left;
+}
+.item-box:nth-child(2n) .item-headline .item-bullet{
+	background: #2fc3cb;
+}
+.item-headline{
+	margin-right: auto;
+	margin-left: auto;
+	display: table;
+	position: relative;
+	padding: 20px 0px;
+}
+.item-image{
+	cursor: default;
+	width: 210px;
+	float: left;
+}
+.item-info-subcontainer{
+	cursor: text;
+}
+.item-info-container{
+	margin-top: 10px;
+}
+.item-headline-box,.item-info-container{
+	float: left;
+	width: 100%;
+	background: #FFF;
+}
+.item-info-subcontainer{
+	float: left;
+	padding: 30px 35px;
+}
+.item-desc{
+	text-align: justify;
+	margin-top: 30px;
+}
+.items-table{
+	width: 100%;
+}
+/******************animations***************/
+.ng-show 
+{ 
+	-webkit-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+	-moz-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+	-ms-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+	-o-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+	transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+	position: relative;
+	display: block;
+	overflow: hidden;
+	text-overflow: clip;
+	white-space:nowrap;
+} 
+.ng-show {
+	opacity: 0;
+	width: 0px;
+	height: 0px;
+}
+
+.animate-show.animate-show-active{
+	opacity: 1;
+	width: 150px;
+	height: 30px;
+}
