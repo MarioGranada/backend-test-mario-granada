@@ -3,18 +3,18 @@
  */
 'use strict';
 
-var app = angular.module('grabilityTestApp',['ngRoute','controllers']);
+var app = angular.module('grabilityBackendTestApp',['ngRoute','controllers']);
 
 /**
  * Configure the Routes
  */
 app.config(['$routeProvider', function($routeProvider){
   $routeProvider.
-    when("/news_feed",{
+    when("/matrix",{
       templateUrl:'views/home.html',
-      controller: 'NewsFeedCtrl'
+      controller: 'MatrixCtrl'
     }).
     otherwise({
-      redirectTo: "/news_feed"
+      redirectTo: "/matrix"
     });
 }]);

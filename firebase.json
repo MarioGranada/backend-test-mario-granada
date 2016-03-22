@@ -1,9 +1,0 @@
-{
-  "firebase": "experis-test-mario-granada",
-  "public": ".",
-  "ignore": [
-    "firebase.json",
-    "**/.*",
-    "**/node_modules/**"
-  ]
-}
