@@ -168,3 +168,29 @@ li{
 	width: 150px;
 	height: 30px;
 }
+
+textarea{
+	width: 300px;
+	min-height: 300px;
+	float: left;
+	border: none;
+}
+form{
+	width: 100%;
+	float: left;
+}
+.matrix-input{
+	margin-right: 15px;
+}
+.matrix-output{
+	margin-left: 15px;
+}
+input[type="submit"]{
+	float: left;
+	background: #29b35b;
+	color: #FFF;
+	clear: left;
+	border: none;
+	padding: 15px;
+	margin: 15px 0px;
+}
