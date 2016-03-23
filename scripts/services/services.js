@@ -31,7 +31,7 @@ services.factory("RappiMatrix",function(){
     }
     RappiMatrix.prototype.sumPoints=function(x1,y1,z1,x2,y2,z2){
         var sum=0;
-        for ( i=0; x1 <= x2; i++) {
+        for ( var i=0; x1 <= x2; i++) {
             sum+=this.matrix[x1][y1][z1];
             x1++;
             y1++;
