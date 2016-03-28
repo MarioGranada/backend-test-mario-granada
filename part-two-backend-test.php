@@ -15,16 +15,16 @@ public function post_confirm(){
 		Driver::update($driver_id,array(
 			"available" => '0'
 		));
-		$pushMessage = 'Tu servicio ha sido confirmado!'; //Notificar a usuario!!
+		$push_message = 'Tu servicio ha sido confirmado!'; //Notificar a usuario!!
 
 		$push = Push::make();
 		if ($service->user->uuid == ''){
 			return Response::json(array('error' => '0'));
 		}
 		if ($service->user->type == '1'){//iPhone
-			$result= $push->ios($service->user->uuid,$pushMessage,1, 'honk.wav', 'Open', array('serviceId' => $service_id));
+			$result= $push->ios($service->user->uuid,$push_message,1, 'honk.wav', 'Open', array('service_id' => $service_id));
 		} else {
-			$result = $push-> android2($service->user->uuid,$pushMessage,1,'default','Open',array('serviceId' => $service_id));
+			$result = $push-> android2($service->user->uuid,$push_message,1,'default','Open',array('service_id' => $service_id));
 		}
 		return Response::json(array('error' => '0'));
 	}else{
